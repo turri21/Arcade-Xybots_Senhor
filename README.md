@@ -1,3 +1,8 @@
+-=(Xybots_Senhor notes)=-
+
+Tested: Working Video 720p, 1080p & Sound.
+
+___
 # Xybots for MiSTer FPGA
 
 A hardware recreation of Atari Games' 1987 arcade title **Xybots**, implemented
