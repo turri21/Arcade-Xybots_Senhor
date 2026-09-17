@@ -11,7 +11,7 @@
 # --------------------------------------------------------------------------
 
 set_global_assignment -name FAMILY "Cyclone V"
-set_global_assignment -name DEVICE 5CSEBA6U23I7
+set_global_assignment -name DEVICE 5CSEMA6U23A7
 set_global_assignment -name TOP_LEVEL_ENTITY sys_top
 set_global_assignment -name LAST_QUARTUS_VERSION "17.0.2 Lite Edition"
 
@@ -19,10 +19,10 @@ set_global_assignment -name GENERATE_RBF_FILE ON
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name NUM_PARALLEL_PROCESSORS ALL
 set_global_assignment -name SAVE_DISK_SPACE OFF
-set_global_assignment -name SMART_RECOMPILE ON
+set_global_assignment -name SMART_RECOMPILE OFF
 
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP "-40"
-set_global_assignment -name MAX_CORE_JUNCTION_TEMP 100
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 125
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 # Multicorner analysis ON.  The MiSTer template ships with it OFF, which
@@ -84,3 +84,4 @@ set_global_assignment -name VERILOG_MACRO "MISTER_FB=1"
 source sys/sys.tcl
 source sys/sys_analog.tcl
 source files.qip
+set_global_assignment -name SDC_FILE senhor_constraints.sdc
